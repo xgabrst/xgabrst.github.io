@@ -1,8 +1,26 @@
 ---
 layout: default
-title: Hank Quinlan, Horrible Cop
+title: Uvod
 ---
-<div class="blurb">
-	<h1>Hi there, I'm Tomas Gabrs!</h1>
-	<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-</div><!-- /.blurb -->
+<div id="header-image" class="jumbotron text-center">
+	<h1>{{ site.name }}</h1>
+	<p>Vitajte na mojej osobnej stranke</p>
+</div>
+
+<div class="container">
+	<div class="row text-center">
+		<h1>Najnovsie clanky</h1>
+	</div>
+	<div class="row text-center">
+		{% for post in site.posts limit:3 %}
+		<div class="col-sm-4">
+			<div class="thumbnail post-card">
+				<h3>{{ post.title }}</h3>
+				<p>{{ post.excerpt }}</p>
+				<a href="{{ post.url }}" type="button" class="btn btn-primary">Viac</a>
+			</div>
+		</div>
+		{% endfor %}
+		<a href="/blog" id="all-article" type="button" class="btn btn-primary pull-right">Zobrazit vsetky clanky</a>
+	</div>
+</div>

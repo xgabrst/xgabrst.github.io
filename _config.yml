@@ -1,3 +1,4 @@
-name: Hank Quinlan, Horrible Cop
+name: Tomas Gabrs
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+excerpt_separator: "<!--viac-->"
