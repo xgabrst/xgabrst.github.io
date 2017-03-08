@@ -1,26 +1,47 @@
 ---
-layout: default
+layout: intro
 title: Uvod
 ---
-<div id="header-image" class="jumbotron text-center">
-	<h1>{{ site.name }}</h1>
-	<p>Vitajte na mojej osobnej stranke</p>
+<div class="container-fluid section paper-bg">
+	<div class="container">
+		<div class="row section-header text-center black-text">
+			Najnovsie clanky
+		</div>
+		<div class="row">
+			{% for post in site.posts limit:3 %}
+				<div class="col-md-4">
+					<div class="thumbnail silk-bg paper-text post-card text-center">
+						<h3>{{ post.title }}</h3>
+						<p>{{ post.excerpt }}</p>
+						<a href="{{ post.url }}" type="button" class="btn gold-btn">Viac</a>
+					</div>
+				</div>
+			{% endfor %}
+			<a href="/blog" id="all-article" type="button" class="btn gold-btn pull-right">Zobrazit vsetky clanky</a>
+		</div>
+	</div>
 </div>
 
-<div class="container">
-	<div class="row text-center">
-		<h1>Najnovsie clanky</h1>
-	</div>
-	<div class="row text-center">
-		{% for post in site.posts limit:3 %}
-		<div class="col-sm-4">
-			<div class="thumbnail post-card">
-				<h3>{{ post.title }}</h3>
-				<p>{{ post.excerpt }}</p>
-				<a href="{{ post.url }}" type="button" class="btn btn-primary">Viac</a>
+<div class="container-fluid section gold-bg">
+	<div class="container">
+		<div class="row section-header text-center paper-text">
+			Studium
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="thumbnail silk-bg paper-text post-card text-center">
+					<h3>Tvorba otazok z ucebneho textu</h3>
+					<p>Tu bude pokec z YonBanu. Tu bude pokec z YonBanu. Tu bude pokec z YonBanu. Tu bude pokec z YonBanu. Tu bude pokec z YonBanu. Tu bude pokec z YonBanu. Tu bude pokec z YonBanu. </p>
+					<a href="/praca" type="button" class="btn gold-btn">Viac</a>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="thumbnail silk-bg paper-text post-card text-center">
+					<h3>Webove publikovanie</h3>
+					<p>Tu bude pokec z YonBanu. Tu bude pokec z YonBanu. Tu bude pokec z YonBanu. Tu bude pokec z YonBanu. Tu bude pokec z YonBanu. Tu bude pokec z YonBanu. Tu bude pokec z YonBanu. Tu bude pokec z YonBanu. Tu bude pokec z YonBanu. Tu bude pokec z YonBanu. </p>
+					<a href="/webovepublikovanie" type="button" class="btn gold-btn">Viac</a>
+				</div>
 			</div>
 		</div>
-		{% endfor %}
-		<a href="/blog" id="all-article" type="button" class="btn btn-primary pull-right">Zobrazit vsetky clanky</a>
 	</div>
 </div>

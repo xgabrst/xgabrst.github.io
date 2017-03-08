@@ -9,19 +9,98 @@
     color: white;
 }
 
-.thumbnail {
-    padding-bottom: 10px;
-    background-color: #e1e1e1;
-}
-
-.thumbnail:hover {
-    background-color: #efefef;
+.jumbotron {
+    margin-bottom: 0px;
 }
 
 .post-card {
     border-radius: 15px;
+    padding-bottom: 10px;
+}
+
+.post-card:hover {
+    background-color: #c3b5a2;
 }
 
 #all-article {
     margin-right: 20px;
+}
+
+.gold-bg {
+    background-color: #c0b283;
+}
+
+.gold-text {
+    color: #c0b283;
+}
+
+.gold-btn {
+    background-color: #c0b283;
+    color: #f4f4f4;
+}
+
+.gold-btn:hover {
+    background-color: #b0a273;
+    color: #f4f4f4;
+}
+
+.silk-bg {
+    background-color: #b9a892;
+}
+
+.silk-text {
+    color: #b9a892;
+}
+
+.paper-bg {
+    background-color: #f4f4f4;
+}
+
+.paper-text {
+    color: #f4f4f4;
+}
+
+.black-bg {
+    background-color: #373737;
+}
+
+.black-text {
+    color: #373737;
+}
+
+.transparent-bg {
+    background-color: transparent;
+}
+
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-link {
+    padding-left: 20px;
+    color: #f4f4f4;
+}
+
+.footer-link:hover {
+    color: #f4f4f4;
+}
+
+.blog-item {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.section-header {
+    font-size: 36px;
+    padding-bottom: 20px;
+}
+
+.small-header {
+    margin-top: 0px;
 }
