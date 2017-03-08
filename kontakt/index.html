@@ -2,3 +2,11 @@
 layout: basic
 title: Kontakt
 ---
+{% for contact in site.data.contacts %}
+<div class="row contact-item text-center">
+    <div class="col-md-12">
+        <img src="{{ contact.image }}" style="height:25px;">
+        <b>{{ contact.prefix}}:</b> {{ contact.value }}
+    </div>
+</div>
+{% endfor %}

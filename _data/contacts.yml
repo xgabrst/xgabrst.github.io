@@ -1,0 +1,11 @@
+- value: gabrstomas@gmail.com
+  prefix: Email
+  image: /images/gmaillogo.png
+
+- value: xgabrst.github.io
+  prefix: GitHub Page
+  image: /images/githubpageslogo.png
+
+- value: github.com/xgabrst
+  prefix: GitHub
+  image: /images/githubsmalllogo.png

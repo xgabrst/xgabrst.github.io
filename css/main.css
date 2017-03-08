@@ -77,6 +77,15 @@
     padding-bottom: 20px;
 }
 
+.post-about {
+    margin-top: 0px !important;
+}
+
+.contact-item {
+    margin-top: 5px;
+    font-size: 18px;
+}
+
 .footer-link {
     padding-left: 20px;
     color: #f4f4f4;
