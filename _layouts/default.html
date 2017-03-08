@@ -61,7 +61,10 @@
 						<a href="#" class="footer-link">Mapa stranky</a>
 					</div>
 					<div class="col-md-6 text-center">
-						B
+						<p>
+							{% assign quote = site.data.quotes | sample %}
+							"{{ quote.text }}" ({{ quote.author }})
+						</p>
 					</div>
 				</div>
 			</div>
