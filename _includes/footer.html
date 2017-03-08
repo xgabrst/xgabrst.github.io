@@ -1,0 +1,18 @@
+<div class="container-fluid black-bg paper-text">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center footer-item">
+                <a href="/omne" class="footer-link">O mne</a>
+                <a href="/praca" class="footer-link">Praca</a>
+                <a href="/blog" class="footer-link">Blog</a>
+                <a href="/webovepublikovanie" class="footer-link">Webove publikovanie</a>
+                <a href="/kontakt" class="footer-link">Kontakt</a>
+                <a href="#" class="footer-link">Mapa stranky</a>
+            </div>
+            <div class="col-md-6 text-center footer-item">
+                {% assign quote = site.data.quotes | sample %}
+                "{{ quote.text }}" ({{ quote.author }})
+            </div>
+        </div>
+    </div>
+</div>

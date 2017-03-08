@@ -19,27 +19,7 @@
 	</head>
 	<body>
 		<!-- NAVIGATION START -->
-		<nav class="navbar navbar-default navbar-fixed-top">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="/">{{ site.name }}</a>
-				</div>
-				<div class="collapse navbar-collapse" id="mainNavbar">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="/omne">O mne</a></li>
-						<li><a href="/praca">Praca</a></li>
-						<li><a href="/blog">Blog</a></li>
-						<li><a href="/webovepublikovanie">Webove publikovanie</a></li>
-						<li><a href="/kontakt">Kontakt</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+		{% include navbar.html %}
 		<!-- NAVIGATION END -->
 
 		<!-- CONTENT START -->
@@ -49,26 +29,7 @@
 		<!-- CONTENT END -->
 
 		<!-- FOOTER START -->
-		<div class="container-fluid black-bg paper-text">
-			<div class="container">
-				<div class="row footer">
-					<div class="col-md-6 text-center">
-						<a href="/omne" class="footer-link">O mne</a>
-						<a href="/praca" class="footer-link">Praca</a>
-						<a href="/blog" class="footer-link">Blog</a>
-						<a href="/webovepublikovanie" class="footer-link">Webove publikovanie</a>
-						<a href="/kontakt" class="footer-link">Kontakt</a>
-						<a href="#" class="footer-link">Mapa stranky</a>
-					</div>
-					<div class="col-md-6 text-center">
-						<p>
-							{% assign quote = site.data.quotes | sample %}
-							"{{ quote.text }}" ({{ quote.author }})
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
+		{% include footer.html %}
 		<!-- FOOTER END -->
 	</body>
 </html>

@@ -2,3 +2,10 @@ name: Tomas Gabrs
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 excerpt_separator: "<!--viac-->"
+sitemap:
+    filename: "/sitemap.xml"
+    exclude:
+    include_posts:
+        - "/index.html"
+    change_frequency_name: "change_frequency"
+    priority_name: "priority"
