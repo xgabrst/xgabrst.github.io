@@ -1,5 +1,9 @@
+- value: xgabrst@stuba.sk
+  prefix: Stuba Mail
+  image: /images/stulogo.png
+
 - value: gabrstomas@gmail.com
-  prefix: Email
+  prefix: Gmail
   image: /images/gmaillogo.png
 
 - value: xgabrst.github.io
