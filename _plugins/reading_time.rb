@@ -11,7 +11,7 @@ module ReadingTimeFilter
 		words = input.split.size;
 		minutes = ( words / words_per_minute ).floor
 		minutes_label = minutes === 1 ? " min" : " min"
-		minutes > 0 ? "about #{minutes} #{minutes_label}" : "menej ako 1 min"
+		minutes > 0 ? "#{minutes} #{minutes_label}" : "menej ako 1 min"
 	end
 end
 

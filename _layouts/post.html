@@ -2,7 +2,7 @@
 layout: basic
 ---
 <div class="row text-center post-about">
-  <h4 class="no-top-margin">{{ page.date | date_to_string }} - Odhadovany cas citania: {{ page.content | reading_time }} - Pocet slov: {{ page.content | number_of_words}}</h4>
+  <p class="no-top-margin">{{ page.date | date_to_string }} (pocet slov: {{ page.content | number_of_words }}) ({{ page.content | reading_time }})</p>
 </div>
 
 <div class="row">
@@ -11,7 +11,7 @@ layout: basic
 
 <div class="row">
   {% if page.next.url %}
-  <a href="{{ page.next.url }}" type="button" class="btn btn-primary">&laquo; {{ page.next.title }}</a>
+    <a href="{{ page.next.url }}" type="button" class="btn btn-primary">&laquo; {{ page.next.title }}</a>
   {% endif %}
   {% if page.previous.url %}
     <a href="{{ page.previous.url }}" type="button" class="btn btn-primary pull-right">{{ page.previous.title }} &raquo;</a>

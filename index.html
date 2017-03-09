@@ -1,6 +1,7 @@
 ---
-layout: intro
+layout: page_with_header
 title: Uvod
+header_image: header-image.jpg
 ---
 <div class="container-fluid section paper-bg">
 	<div class="container">
@@ -9,13 +10,13 @@ title: Uvod
 		</div>
 		<div class="row">
 			{% for post in site.posts limit:3 %}
-				<div class="col-md-4">
-					<div class="thumbnail silk-bg paper-text post-card text-center">
-						<h3>{{ post.title }}</h3>
-						<p>{{ post.excerpt }}</p>
-						<a href="{{ post.url }}" type="button" class="btn gold-btn">Viac</a>
-					</div>
+			<div class="col-md-4">
+				<div class="thumbnail silk-bg paper-text post-card text-center">
+					<h3>{{ post.title }}</h3>
+					<p>{{ post.content | truncate: 200}}</p>
+					<a href="{{ post.url }}" type="button" class="btn gold-btn">Viac</a>
 				</div>
+			</div>
 			{% endfor %}
 			<a href="/blog" id="all-article" type="button" class="btn gold-btn pull-right">Zobrazit vsetky clanky</a>
 		</div>

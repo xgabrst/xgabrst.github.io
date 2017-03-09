@@ -3,7 +3,6 @@
 }
 
 #header-image {
-    background-image: url("/images/header-image.jpg");
     background-attachment: fixed;
     background-size: cover;
     color: white;
@@ -116,4 +115,11 @@
 
 .small-header {
     margin-top: 0px;
+}
+
+.nav-tabs.nav-justified > .active > a,
+.nav-tabs.nav-justified > .active > a:hover,
+.nav-tabs.nav-justified > .active > a:focus {
+    background-color: #337ab7;
+    color: #fff;
 }

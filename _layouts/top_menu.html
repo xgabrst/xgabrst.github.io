@@ -1,0 +1,33 @@
+---
+layout: basic
+---
+<ul class="nav nav-tabs nav-justified">
+    {% for item in site.[page.collection] %}
+        {% if item.active == "disabled" %}
+            <li class="disabled"><a data-toggle="pill" href="#">{{ item.menu_title }}</a> </li>
+        {% else %}
+            {% if item.active == "first" %}
+                <li class="active"><a data-toggle="pill" href="#{{ item.href }}">{{ item.menu_title }}</a> </li>
+            {% else %}
+                <li><a data-toggle="pill" href="#{{ item.href }}">{{ item.menu_title }}</a> </li>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+</ul>
+
+<div class="tab-content">
+    {% for item in site.[page.collection] %}
+        {% if item.active != "disabled" %}
+            <h3>{{ item.title }}</h3>
+            {% if item.active == "first" %}
+                <div id="{{ item.href }}" class="tab-pane fade in active">
+                    {{ item.content }}
+                </div>
+            {% else %}
+                <div id="{{ item.href }}" class="tab-pane fade in">
+                    {{ item.content }}
+                </div>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+</div>

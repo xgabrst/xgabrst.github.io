@@ -2,6 +2,12 @@ name: Tomas Gabrs
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 excerpt_separator: "<!--viac-->"
+image_folder: /images/
+css_folder: /css/
+js_folder: /js/
+collections:
+- praca
+- wpub
 sitemap:
     filename: "/sitemap.xml"
     exclude:
