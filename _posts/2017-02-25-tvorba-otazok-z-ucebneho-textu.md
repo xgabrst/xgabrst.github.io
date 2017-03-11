@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Tvorba otazok z ucebneho textu"
+title: "Tvorba otázok z učebného textu"
 date: 2017-02-25
 ---
 Automatické generovanie otázok z textu je relatívne nová disciplína, ktorá sa súčasne týka rôznych odvetví. Ľudia sa v podstate neustále pýtajú otázky v snahe získať nové informácie a vedomosti. Napríklad otázky od študentov pre učiteľov počas výučby, otázky od učiteľov pre študentov v rámci testu, rovnako ako otázky v rámci každodenných konverzácií v spoločnosti, sú ukážkovým príkladom toho, ako často ľudia otázky používajú. Ľudia sa pýtajú otázky z rôznych dôvodov, no keďže naším cieľom je tvorba otázok z učebného textu, budeme sa primárne venovať otázkam položeným s cieľom overenia vedomostí alebo ujasnenia si nejasností.

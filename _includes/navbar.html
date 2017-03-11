@@ -10,11 +10,9 @@
         </div>
         <div class="collapse navbar-collapse" id="mainNavbar">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/omne">O mne</a></li>
-                <li><a href="/praca">Praca</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/webovepublikovanie">Webove publikovanie</a></li>
-                <li><a href="/kontakt">Kontakt</a></li>
+                {% for item in site.data.pages %}
+                    <li><a href="{{item.link}}">{{ item.title }}</a></li>
+                {% endfor %}
             </ul>
         </div>
     </div>

@@ -2,12 +2,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 text-center footer-item">
-                <a href="/omne" class="footer-link">O mne</a>
-                <a href="/praca" class="footer-link">Praca</a>
-                <a href="/blog" class="footer-link">Blog</a>
-                <a href="/webovepublikovanie" class="footer-link">Webove publikovanie</a>
-                <a href="/kontakt" class="footer-link">Kontakt</a>
-                <a href="/sitemap.xml" class="footer-link">Mapa stranky</a>
+                {% for item in site.data.pages %}
+                    <a href="{{item.link}}" class="footer-link">{{ item.title }}</a>
+                {% endfor %}
+                <a href="/sitemap.xml" class="footer-link">Mapa stránky</a>
             </div>
             <div class="col-md-6 text-center footer-item">
                 {% assign quote = site.data.quotes | sample %}
