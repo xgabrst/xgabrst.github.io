@@ -6,15 +6,46 @@ body {
     margin-bottom: 60px;
     background-color: #f4f4f4;
 }
+
+@media (max-width: 335px) {
+    #content-container {
+        margin-top: 50px;
+        margin-bottom: 200px;
+    }
+}
+
+@media (min-width: 336px) and (max-width: 590px) {
+    #content-container {
+        margin-top: 50px;
+        margin-bottom: 160px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 990px) {
+    #content-container {
+        margin-top: 50px;
+        margin-bottom: 120px;
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1200px) {
+    #content-container {
+        margin-top: 50px;
+        margin-bottom: 80px;
+    }
+}
+
+@media (min-width: 1201px) {
+    #content-container {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+}
+
 .footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-}
-
-#content-container {
-    margin-top: 50px;
-    margin-bottom: 20px;
 }
 
 #header-image {
