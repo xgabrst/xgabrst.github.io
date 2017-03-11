@@ -1,0 +1,19 @@
+---
+layout: basic
+---
+<div class="row">
+    <ul>
+        {% if page.country != nil %}
+            <li><b>Krajina pôvodu:</b> {{ page.country }}</li>
+        {% endif %}
+        {% if page.year != nil %}
+            <li><b>Rok:</b> {{ page.year }}</li>
+        {% endif %}
+        {% if page.minutes != nil %}
+            <li><b>Dĺžka:</b> {{ page.minutes }}min</li>
+        {% endif %}
+        {% if page.content != nil %}
+            <li><b>Obsah:</b> {{ page.content }}</li>
+        {% endif %}
+    </ul>
+</div>

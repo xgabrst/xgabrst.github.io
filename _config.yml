@@ -6,8 +6,11 @@ image_folder: /images/
 css_folder: /css/
 js_folder: /js/
 collections:
-- praca
-- wpub
+  praca:
+  wpub:
+  movies:
+    output: true
+    permalink: /movies/:title.html
 sitemap:
     filename: "/sitemap.xml"
     exclude:

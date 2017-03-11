@@ -5,6 +5,12 @@ title: O mne
 <div class="row">
     <div class="col-md-12">
         <p>Moje meno je <b>Tomáš Gábrš</b> a som študentom STU FIIT, odbor Informatika. V súčanosti navštevujem 3. ročník a pracujem na bakalárskom projekte. Popri škole navyše pracujem v spoločnosti SAP v Bratislave na pozícií Java Developer.</p>
-        <p>Pochádzam z Malaciek a od 6 rokov som sa aktívne venoval futbalu a pasívne asi všetkým športom, ktoré existujú.</p>
+        <p>Pochádzam z Malaciek a od 6 rokov som sa aktívne venoval futbalu a pasívne asi všetkým športom, ktoré existujú. Do 15 rokov som hrával v tíme ŠK Žolík Malacky, s ktorým sme dosiahli veľa úspechov na turnajoch na Slovensku aj v zahraničí. Najcennejším bolo víťazstvo na veľkom medzinárodnom turnaji v Holandsku. Pri prechode do kategórie žiakov som prestúpil do tímu TJ Záhoran Kostolište, s ktorým sme 2 roky bojovali v 1. západoslovenskej lige hráčov do 15 rokov. V tomto klube som pokračoval aj v dorasteneckej kategórií, pretože som vyššiu prioritu priradil škole a na trénovanie v niektorom z kvalitnejších tímov som nemal dostatok času. Svoju aktívnu činnosť som ukončil v 19 rokoch po pomerne vážnom zranení kolena.</p>
+        <p>Okrem spomínaného športu sa vo svojom voľnom čase rád stretávam s priateľmi alebo si oddýchnem pri dobrom filme. Nižšie môžte nájsť niektoré z mojich obľúbených filmov:</p>
+        <ul>
+            {% for movie in site.movies %}
+            <a href="{{ movie.url }}"><li>{{ movie.title }}</li></a>
+            {% endfor %}
+        </ul>
     </div>
 </div>
