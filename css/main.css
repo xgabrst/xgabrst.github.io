@@ -71,30 +71,17 @@ body {
     margin-right: 20px;
 }
 
-.gold-bg {
-    background-color: #c0b283;
+#study {
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-.gold-text {
-    color: #c0b283;
+.blue-bg {
+    background-color: #c4daff;
 }
 
-.gold-btn {
-    background-color: #c0b283;
-    color: #f4f4f4;
-}
-
-.gold-btn:hover {
-    background-color: #b0a273;
-    color: #f4f4f4;
-}
-
-.silk-bg {
-    background-color: #b9a892;
-}
-
-.silk-text {
-    color: #b9a892;
+.blue-bg:hover {
+    background-color: #d8e7ff;
 }
 
 .paper-bg {
@@ -111,10 +98,6 @@ body {
 
 .black-text {
     color: #373737;
-}
-
-.transparent-bg {
-    background-color: transparent;
 }
 
 .footer-item {
