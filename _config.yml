@@ -8,7 +8,7 @@ css_folder: /css/
 js_folder: /js/
 
 collections:
-  praca:
+  work:
   wpub:
   movies:
     output: true
