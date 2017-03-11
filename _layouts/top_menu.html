@@ -1,8 +1,15 @@
 ---
 layout: basic
 ---
+{% assign collection_name = page.collection %}
+{% for c in site.collections %}
+    {% if c.label == collection_name %}
+        {% assign act_collection = c %}
+    {% endif %}
+{% endfor %}
+
 <ul class="nav nav-tabs nav-justified">
-    {% for item in site.[page.collection] %}
+    {% for item in act_collection.docs %}
         {% if item.active == "disabled" %}
             <li class="disabled"><a data-toggle="pill" href="#">{{ item.menu_title }}</a> </li>
         {% else %}
@@ -16,7 +23,7 @@ layout: basic
 </ul>
 
 <div class="tab-content">
-    {% for item in site.[page.collection] %}
+    {% for item in act_collection.docs %}
         {% if item.active != "disabled" %}
             <h3>{{ item.title }}</h3>
             {% if item.active == "first" %}

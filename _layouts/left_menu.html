@@ -1,12 +1,19 @@
 ---
 layout: basic
 ---
+{% assign collection_name = page.collection %}
+{% for c in site.collections %}
+    {% if c.label == collection_name %}
+        {% assign act_collection = c %}
+    {% endif %}
+{% endfor %}
+
 <div class="row">
     <div class="col-md-3">
         <ul class="nav nav-pills nav-stacked">
-            {% assign firstItem = site.[page.collection].first %}
+            {% assign firstItem = act_collection.docs.first %}
             <li class="active"><a data-toggle="pill" href="#{{ firstItem.href }}">{{ firstItem.title }}</a></li>
-            {% for item in site.[page.collection] offset:1 %}
+            {% for item in act_collection.docs offset:1 %}
             <li><a data-toggle="pill" href="#{{ item.href }}">{{ item.title }}</a></li>
             {% endfor %}
         </ul>
@@ -14,12 +21,12 @@ layout: basic
 
     <div class="col-md-9 praca-content">
         <div class="tab-content praca-content">
-            {% assign firstItem = site.[page.collection].first %}
+            {% assign firstItem = act_collection.docs.first %}
             <div id="{{ firstItem.href }}" class="tab-pane fade in active">
                 <h3 class="no-top-margin">{{ firstItem.title }}</h3>
                 <p>{{ firstItem.content }}</p>
             </div>
-            {% for item in site.[page.collection] offset:1 %}
+            {% for item in act_collection.docs offset:1 %}
             <div id="{{ item.href }}" class="tab-pane fade in">
                 <h3 class="no-top-margin">{{ item.title }}</h3>
                 <p>{{ item.content }}</p>
