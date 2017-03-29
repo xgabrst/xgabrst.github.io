@@ -3,8 +3,6 @@ layout: post
 title: "WPUB - 2. zadanie"
 date: 2017-03-29
 ---
-Predmetom 2. zadania je spracovanie vybraného dokumentu (ideálne bakalárskeho projektu) z pôvodného ľubovoľného (Word, OpenOffice, LaTeX, …) formátu do formátu DocBook a vygenerovanie cieľového tvaru v PDF. Výsledný dokument bude mať rozsah minimálne 10 a maximálne 15 strán. Do rozsahu sa nezapočítavajú úvodné strany (obsah, zoznamy obrázkov a tabuliek), použitá literatúra a prílohy.
-
 #### Riešenie:
 Výsledok tohto zadania je môj bakalársky projekt transformovaný do formátu DocBook. Pri riešení som použil rôzne konštrukcie, ktoré sú popísané nižšie.
 
@@ -12,7 +10,7 @@ Výsledok tohto zadania je môj bakalársky projekt transformovaný do formátu 
 Text je členený na 4 kapitoly, 13 podkapitol, 15 podpodkapitol a 1 prílohu. Na členenie som použil konštrukcie **chapter**, **section**, **para** a **appendix**.
 
 #### Zvýraznenie slov a členenia:
-Na zvýraznenie slov som na rôznych miestach použil **emphasis**, najmä pri uvádzaní príkladov (napr. strana 15). Na zvýraznenie členenia textu odrážkami som použil **itemizedlist** s atribútom **mark=opencircle**, ktorý obsahoval jednotlivé elementy **listitem** (napr. strana 13).
+Na zvýraznenie slov som na rôznych miestach dokumentu použil element **emphasis**, najmä pri uvádzaní príkladov (napr. strana 15). Na zvýraznenie členenia textu odrážkami som použil **itemizedlist** s atribútom **mark=opencircle**, ktorý obsahoval jednotlivé elementy **listitem** (napr. strana 13).
 
 #### Odkazy:
 Odkazy na iné časti sa v mojom dokumente na rôznych miestach. Jednotlivým častiam som pridal atribút **id**, na ktorého hodnotu sa následne odvolávam na požadovanom mieste prostredníctvom **xref** s atribútom **linkend**. Odkaz na URL som použil v rámci poznámky pod čiarou na strane 21. Použil som element **ulink** s **citetitle** a atribútom **url**.
