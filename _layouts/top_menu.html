@@ -25,13 +25,14 @@ layout: basic
 <div class="tab-content">
     {% for item in act_collection.docs %}
         {% if item.active != "disabled" %}
-            <h3>{{ item.title }}</h3>
             {% if item.active == "first" %}
                 <div id="{{ item.href }}" class="tab-pane fade in active">
+                    <h3>{{ item.title }}</h3>
                     {{ item.content }}
                 </div>
             {% else %}
                 <div id="{{ item.href }}" class="tab-pane fade in">
+                    <h3>{{ item.title }}</h3>
                     {{ item.content }}
                 </div>
             {% endif %}

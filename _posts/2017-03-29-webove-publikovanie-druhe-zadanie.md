@@ -1,10 +1,8 @@
 ---
-title: "Transformácia vybraného dokumentu do formátu DocBook"
-href: "zadanie2"
-menu_title: "Zadanie 2"
-active: "first"
+layout: post
+title: "WPUB - 2. zadanie"
+date: 2017-03-29
 ---
-#### Zadanie:
 Predmetom 2. zadania je spracovanie vybraného dokumentu (ideálne bakalárskeho projektu) z pôvodného ľubovoľného (Word, OpenOffice, LaTeX, …) formátu do formátu DocBook a vygenerovanie cieľového tvaru v PDF. Výsledný dokument bude mať rozsah minimálne 10 a maximálne 15 strán. Do rozsahu sa nezapočítavajú úvodné strany (obsah, zoznamy obrázkov a tabuliek), použitá literatúra a prílohy.
 
 #### Riešenie:
@@ -41,3 +39,6 @@ Na vygenerovanie registra pojmov som použil *index**, ktorého obsah vznikne na
 * Pridal som možnosti na zlomenie strany a riadky, ktoré som následne mohol použiť v dokumente ako <?linebreak?> a <?hard-pagebreak?>. (206-213)
 * Zväčšil som odsadenie zoznamov od ľavého okraja strany. (215-223)
 * Zmenšil som veľkosť medzier medzi prvkami zoznamu. (225-230)
+
+#### Odkazy:
+* [GitHub Pages](http://localhost:4000/webovepublikovanie/ "GitHub Pages")
