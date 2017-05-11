@@ -38,6 +38,6 @@ Na vygenerovanie registra pojmov som použil *index**, ktorého obsah vznikne na
 * Zmenil som odsadenie odstavcov, podľa vzoru pôvodného dokumentu. (97, 101, 102, 103)
 * Zmenil som hodnotu bibliography.numbered, aby zoznam literatúry nebol číslovaný (175).
 * Do časti generate.toc som pre book pridal aj figure a table, aby sa do dokumentu vygenerovali zoznamy obrázkov a tabuliek. (202)
-* Pridal som možnosti na zlomenie strany a riadky, ktoré som následne mohol použiť v dokumente ako <?linebreak?> a <?hard-pagebreak?>. (206-213)
+* Pridal som možnosti na zlomenie strany a riadky, ktoré som následne mohol použiť v dokumente ako **?linebreak?** a **?hard-pagebreak?**. (206-213)
 * Zväčšil som odsadenie zoznamov od ľavého okraja strany. (215-223)
 * Zmenšil som veľkosť medzier medzi prvkami zoznamu. (225-230)
